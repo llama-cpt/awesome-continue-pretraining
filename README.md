@@ -49,3 +49,6 @@ IJCAI'22 CERT: continual pre-training on sketches for library oriented code gene
 
 ACL'23 Exploring continual learning for code generation models
 
+
+Q: how to predict the learning rate of llama3
+
