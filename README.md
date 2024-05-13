@@ -1,4 +1,4 @@
-# awsome-continue-pretraining
+# awesome-continue-pretraining
 
 ## Continual Pre-Training of Large Language Models: How to (re)warm your model?
 https://arxiv.org/pdf/2308.04014
