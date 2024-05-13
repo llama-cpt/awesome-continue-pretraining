@@ -5,11 +5,16 @@ https://arxiv.org/pdf/2308.04014
 
 Takeaway:
 1. The length of the warmup phase does not ap- pear to have a significant effect on the Pile and SlimPajama validation losses.
-2.1 Rewarming then decaying the learning rate appears necessary to learn well on the down- stream task. Moreover, while keeping a con- stant learning is initially advantageous on Pile, this advantage vanishes when training long enough on SlimPajama.
-2.2 A model that only learns on SlimPajama per- forms worse on SlimPajama than models pre- trained on Pile in spite of being optimised solely for the downstream task, highlighting positive transfer between the two datasets.
-3.1 Rewarming the learning rate appears to be a significant cause for the degradation of perfor- mance seen previously when starting to learn on the downstream task, as evidenced by re- warming then decaying the learning rate while training on the same dataset.
-3.2 The models donot appear to be able to recover from the performance hit due to rewarming the learning rate when training on the same dataset.
-4. Using an earlier checkpoint when pretraining on the Pile does not lead to learning faster on SlimPajama.
+   
+2. a) Rewarming then decaying the learning rate appears necessary to learn well on the down- stream task. Moreover, while keeping a con- stant learning is initially advantageous on Pile, this advantage vanishes when training long enough on SlimPajama.
+
+    b). A model that only learns on SlimPajama per- forms worse on SlimPajama than models pre- trained on Pile in spite of being optimised solely for the downstream task, highlighting positive transfer between the two datasets.
+
+4. a) Rewarming the learning rate appears to be a significant cause for the degradation of perfor- mance seen previously when starting to learn on the downstream task, as evidenced by re- warming then decaying the learning rate while training on the same dataset.
+   
+   b) The models donot appear to be able to recover from the performance hit due to rewarming the learning rate when training on the same dataset.
+
+6. Using an earlier checkpoint when pretraining on the Pile does not lead to learning faster on SlimPajama.
 
 
 ## Continual Learning for Large Language Models: A Survey
